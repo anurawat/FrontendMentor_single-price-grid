@@ -43,5 +43,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Anu Rawat]
+- Website - [Anu Rawat] https://github.com/anurawat
 - Frontend Mentor - [@anurawat]
