@@ -1,0 +1,153 @@
+:root {
+    --cyan: #2bb3b1;
+    --cyanLight:#4abebd;
+    --brightYellow: hsl(71, 73%, 54%);
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+    --fontSize: 16px;
+    --fontFamily: "Karla", sans-serif;
+    --fontRegular: 400;
+    --fontBold: 700;
+    --borderRadius:5px;
+}
+
+.font-bold {
+    font-weight: var(--fontBold);
+}
+
+.bright-yellow {
+    color: var(--brightYellow);
+}
+
+.cyan-color {
+    color: var(--cyan);
+}
+
+.light-Gray {
+    color: var(--lightGray);
+}
+
+.grayish-Blue {
+    color: var(--grayishBlue);
+}
+
+body
+{
+    width: 45%;
+    margin: auto;
+}
+
+.card-container {
+   
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    font-family: var(--fontFamily);
+    font-weight: var(--fontRegular);
+    border-radius: var(--borderRadius);
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.community-content-box {  
+    padding: 40px;  
+}
+
+.community-content-box > *
+{
+    flex: 1 1 0;
+}
+
+.row-container {
+    display: flex;
+}
+
+.subscription-content-box {
+    background-color: var(--cyan);
+    color: var(--lightGray);
+    padding: 40px;
+    flex: 1 1 0;
+    border-bottom-left-radius: var(--borderRadius);
+}
+
+.subscription-content-box > button
+{
+    width: 100%;
+    border-radius: 2p;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 13px;
+    padding: 10px;
+    font-weight: 700;
+    background-color: var(--brightYellow);
+    color: white;
+    height: 45px;
+}
+
+.whyUs-content-box {
+    padding: 40px;
+    color: var(--lightGray);
+    background-color: var(--cyanLight);
+    flex: 1 1 0;
+    border-bottom-right-radius: var(--borderRadius);
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.m-5 {
+    margin: 5px 0px;
+}
+
+.whyUs-content-box > div {
+    margin: 5px 0px;
+}
+
+.dollar-style
+{
+    font-size: 32px;
+    font-weight: var(--fontBold);
+    margin-right: 10px;
+}
+
+.subscription-price
+{
+    display: flex;
+    align-items: center;
+}
+
+.subscription-content-box > h3,
+.whyUs-content-box > h3 {
+    margin-top: 0px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media  (max-width: 850px) {
+    body
+    {
+        width: 300px;
+    }
+    .subscription-content-box,.whyUs-content-box
+    {
+        border-radius: 0;
+    }
+    .row-container
+    {
+        flex-direction: column;
+    }
+  }
